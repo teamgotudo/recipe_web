@@ -19,9 +19,13 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
-group :development do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
+end
+
+
+group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
